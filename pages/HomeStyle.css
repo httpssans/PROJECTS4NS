@@ -1,0 +1,109 @@
+.body{
+    background-color: #fff;
+    z-index: 1;
+}
+.hero{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: left;
+    padding: 380px 0;
+    position: relative;
+    overflow: hidden;
+}
+.hero h1{
+    font-family: Helvetica, sans-serif;
+    font-weight: 900;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 50%);
+    padding: 900px;
+    font-size: 80px;
+    letter-spacing: -7px;
+}
+.video-bg{
+    position: absolute;
+    top: 0;
+    left: 0;  
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.intro-para {
+    font-family: Helvetica, sans-serif;
+    color: #000000;
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+.intro-para h1{
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: -6px;   
+}
+.intro-para p{
+    font-weight: 450;
+    font-size: 25px;
+    letter-spacing: -2px; 
+}
+.read-btn a{
+    position: relative;
+    width: 1519px;
+    height: 55px;   
+    border-radius: 1px;
+    background: transparent;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    z-index: 1;
+    overflow: hidden;
+}
+.read-btn a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #000000;
+    transition:  .7s;
+    z-index: -1;
+
+}
+.read-btn a:hover::before{
+    width: 100%;
+}
+.read-btn a:hover {
+    color: #fff;
+}
+.cloth-example {
+    font-family: Helvetica, sans-serif;
+    color: #000000;
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+.cloth-example h1{
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: -6px;  
+}
+
+.cloth-example .image {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    margin-left: 65px;
+}
+
+.cloth-example p{
+    text-align: left;
+    font-weight: 450;
+    font-size: 25px;
+    letter-spacing: -2px; 
+}

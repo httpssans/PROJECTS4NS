@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S4NS</title>
+    <link rel="stylesheet" href="RegisterStyle.css">
+    <link rel="stylesheet" href="DefaultStyle.css">
+</head>
+<body class="body">
+    <header class="header">
+      <a href="S4NSHOMEPAGE.html" target="_self"><img src="logo/LOGO.jpeg" class="body-logo"></a>
+      <nav class="navigation">
+  <a href="S4NSHOMEPAGE.html">HOME</a>
+  <div class="dropdown">
+      <a href="S4NSPRODUCT.html">PRODUCTS</a>
+      <div class="dropdown-content">
+        <a href="CLOTHESWEBPAGES/S4NSHOODIES.html">HOODIES</a>
+        <a href="CLOTHESWEBPAGES/S4NSSHORTS.html">SHORTS</a>
+        <a href="CLOTHESWEBPAGES/S4NSJACKETS.html">JACKETS</a>
+        <a href="CLOTHESWEBPAGES/S4NSSHIRTS.html">SHIRTS</a>
+        <a href="CLOTHESWEBPAGES/S4NSPANTS.html">PANTS</a>
+      </div>
+  </div>
+  <a href="S4NSLOGIN.html"class="active">ACCOUNT</a>
+  <a href="S4NSABOUTUS.html">ABOUT S4NS</a>
+  <a href="S4NSCONTACTUS.html">CONTACT US</a>
+</nav>
+</header>
+<form class="form">
+    <div class="title">
+    <h1> REGISTER AN ACCOUNT </h1>
+    </div>
+    <div class="login-form">
+        <input class="input-box" type="email" placeholder="E-MAIL" id="email" name="email" autocomplete="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+        <input class="input-box" type="text" placeholder="FULL NAME" id="name" name="name" required autocomplete="name">
+        <input class="input-box" type="text" placeholder="PHONE NUMBER" id="telephone" pattern="[0-9]*" inputmode="numeric" maxlength="10" autocomplete="tel" required>
+        <div class="login-form">
+            <input class="input-box" type="password" placeholder="PASSWORD" id="password" name="password" required>
+            <input class="input-box" type="password" placeholder="CONFIRM PASSWORD" id="confirmPassword" name="confirmPassword" required>
+            <br>
+            <input class="checkbox" type="checkbox" id="showPassword" onchange="togglePasswordVisibility()">
+            <label class="showPass" for="showPassword">Show Password</label>
+            <br>
+            <br>
+        </div>
+        <div class="checkbox2">
+        <input  type="checkbox" id="Communications">
+        <label for="Communications">I want to receive personalised commercial communications from S4NS by email.</label>
+        <br>
+        <input type="checkbox" id="Cookies" required>
+        <label for="Cookies">I have read and understand the Privacy and Cookies Policy</label>
+        </div>
+        <br>
+        <script src="S4NSLoginJs.js"></script>
+        <button class="button" id="registerBtn" type="submit" disabled>REGISTER</button>
+        <br>
+        <span id="notification" class="notification"></span>
+<div class="signin-link"><p>Already have an account?</p><a href="S4NSLOGIN.html">LOG IN</a></div>
+</div>
+</form>
+<footer class="footer">
+    <div class="footer-text">
+      <p>Copyright © 2023 S4NS.COM all rights reserved.</p>
+    </div>
+    </footer>   
+</body>
+    </html>

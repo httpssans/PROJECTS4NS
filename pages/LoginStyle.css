@@ -1,0 +1,119 @@
+
+.form{
+font-family: Helvetica, sans-serif;
+ margin-top: 100px;
+ background-color: #fff;
+ color: #000;
+ width: 340px;
+ text-align: center;  
+ align-self: center;
+padding-top: 30px;
+padding-bottom: 30px;
+margin-top: 15%;
+margin-bottom: 15%;
+border: 2px solid #000;
+
+}
+.form::before {
+content: '';
+
+}.title{
+    text-align: center;
+    font-size: 8px;
+    letter-spacing: 3px;
+}
+
+.input-box{
+    width: 300px;
+    height: 50px;
+}
+.checkbox{
+width: 13px;
+height: 13px;
+cursor: pointer;
+margin-top: 8px;
+accent-color: #000;
+}
+.showPass{
+font-size: 13px;
+cursor: pointer;
+}
+
+.button{
+    position: relative;
+    width: 105px;
+    height: 35px;   
+    border-radius: 1px;
+    background: transparent;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+.button::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #000000;
+    transition:  .4s;
+    z-index: -1;
+
+}
+.button:hover::before{
+    width: 100%;
+}
+.button:hover {
+    color: #fff;
+}
+.reg-link p{
+    font-size: 15px;
+}
+.reg-link a{
+    position: relative;
+    width: 105px;
+    height: 35px;   
+    border: 2px solid black;
+    background: transparent;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+.reg-link a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #000000;
+    transition:  .4s;
+    z-index: -1;
+
+}
+.reg-link a:hover::before{
+    width: 100%;
+}
+.reg-link a:hover {
+    color: #fff;
+}
+

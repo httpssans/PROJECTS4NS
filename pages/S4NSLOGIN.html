@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S4NS</title>
+    <link rel="stylesheet" href="LoginStyle.css">
+    <link rel="stylesheet" href="DefaultStyle.css">
+</head>
+<body class="body">
+    <header class="header">
+      <a href="S4NSHOMEPAGE.html" target="_self"><img src="logo/LOGO.jpeg" class="body-logo"></a>
+      <nav class="navigation">
+  <a href="S4NSHOMEPAGE.html">HOME</a>
+  <div class="dropdown">
+      <a href="S4NSPRODUCT.html">PRODUCTS</a>
+      <div class="dropdown-content">
+        <a href="CLOTHESWEBPAGES/S4NSHOODIES.html">HOODIES</a>
+        <a href="CLOTHESWEBPAGES/S4NSSHORTS.html">SHORTS</a>
+        <a href="CLOTHESWEBPAGES/S4NSJACKETS.html">JACKETS</a>
+        <a href="CLOTHESWEBPAGES/S4NSSHIRTS.html">SHIRTS</a>
+        <a href="CLOTHESWEBPAGES/S4NSPANTS.html">PANTS</a>
+      </div>
+  </div>
+  <a href="S4NSLOGIN.html" class="active">ACCOUNT</a>
+  <a href="S4NSABOUTUS.html">ABOUT S4NS</a>
+  <a href="S4NSCONTACTUS.html">CONTACT US</a>
+</nav>
+</header>
+<form class="form">
+    <div class="title">
+    <h1> LOG IN TO YOUR ACCOUNT </h1>
+    </div>
+    <input class="input-box" type="email" placeholder="E-MAIL" id="email" name="email" autocomplete="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+    <br>
+        <input class="input-box" type="password" placeholder="PASSWORD" id="password" autocomplete="current-password" name="password" required>
+        <br>
+        <input class="checkbox" type="checkbox" id="showPassword" onchange="togglePasswordVisibility()">
+        <label class="showPass" for="showPassword">Show Password</label>
+        <br>
+        <input class="checkbox" type="checkbox" id="Rememberme">
+        <label class="showPass" for="Rememberme">Remember Me</label>
+        <script src="S4NSLoginJs.js"></script>     
+<br>
+<br>
+<button class="button" type="submit">LOG IN</button>
+<br>
+<br>
+<div class="reg-link"><p>Don't have an account?</p><a href="S4NSREGISTER.html">REGISTER</a></div>
+</div>
+</form>
+<footer class="footer">
+    <div class="footer-text">
+      <p>Copyright © 2023 S4NS.COM all rights reserved.</p>
+    </div>
+    </footer>   
+</body>
+    </html>

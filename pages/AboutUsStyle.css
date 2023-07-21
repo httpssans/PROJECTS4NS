@@ -1,0 +1,64 @@
+.body{
+    background-color: #ffffff;
+    z-index: 1;
+}
+.intro-para {
+    margin-top: 40px;
+    font-family: Helvetica, sans-serif;
+    color: #000000;
+    background-color:rgba(255, 255, 255, 0.891);
+    backdrop-filter: blur(2px);
+    padding-bottom: 10px;
+}
+.intro-para h1{
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: -6px; 
+    background-color: #000000;
+    color: #fff;  
+}
+.intro-para p{
+    color: #000000;
+    font-weight: 450;
+    font-size: 15;
+    /* letter-spacing: -2px;  */
+}
+#more, #more1, #more2, #more3, #more4  {display: none;}
+
+.read-btn{ 
+    font-family: "StreetSoul", sans-serif;
+    position: relative;
+    width: 1519px;
+    height: 55px;   
+    border-radius: 1px;
+    background: transparent;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    z-index: 1;
+    overflow: hidden;
+}
+.read-btn::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #000000;
+    transition:  .7s;
+    z-index: -1;
+
+}
+.read-btn:hover::before{
+    width: 100%;
+}
+.read-btn:hover {
+    color: #fff;
+}
